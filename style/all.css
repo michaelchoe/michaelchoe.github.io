@@ -43,13 +43,13 @@
   font-size: 50px;
   font-family: Avenir, sans-serif;
   font-weight: bold;
-  font-style: italic;
   color: #F3B2C4;
+  letter-spacing: 0.1em;
 }
 
 #titleline {
   height: 10px;
-  width: 390px;
+  width: 445px;
   background-color: #F3B2C4;
 }
 
@@ -214,14 +214,14 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  font-family: avenir;
+  font-family: "lato";
   margin-bottom: 20px;
 }
 
 .overlaytext {
   flex: 1;
   text-align: center;
-  font-family: avenir;
+  font-family: "lato";
   margin-bottom: 10px;
 }
 
