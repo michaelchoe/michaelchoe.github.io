@@ -83,7 +83,6 @@
   display: none;
   float: right;
   margin-top: 10px;
-  z-index: 2;
 }
 
 .bar {
@@ -290,11 +289,12 @@
 
   #titleline {
     height: 5px;
-    width: 60%;
+    width: 100%;
   }
 
-  .sidebarcontainer {
+  .sidebartitlecontainer {
     height: 100px;
+    width: auto;
   }
 
 }
