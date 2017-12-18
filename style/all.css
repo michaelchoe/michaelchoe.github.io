@@ -26,7 +26,7 @@
 }
 
 .bodytitle {
-  font-family: "Nunito";
+  font-family: "NunitoBold";
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -68,11 +68,13 @@
   width: 437px;
   margin-top: 5px;
   background-color: #F3B2C4;
+  display: none;
 }
 
 #navbar {
   width: 62px;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 .link a:hover, #worklink:hover, .dropdownlink a:hover{
@@ -91,8 +93,8 @@
 /*mobile menu*/
 
 .bars {
-  width: 30px;
-  height: 5px;
+  width: 25px;
+  height: 4px;
   margin-bottom: 5px;
   background-color: #F3B2C4;
 }
@@ -100,7 +102,7 @@
 .mobilemenu {
   display: none;
   float: right;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .dropdownmenu {
@@ -201,7 +203,7 @@
 /*portfolio blocks*/
 
 .contentblockcontainer {
-  margin-top: 100px;
+  margin-top: 70px;
   padding-bottom: 20px;
   overflow: auto;
 }
@@ -278,7 +280,7 @@
 /*project stuff*/
 
 .projectblockcontainer {
-  margin-top: 100px;
+  margin-top: 70px;
   padding-bottom: 20px;
   overflow: auto;
 }
@@ -327,11 +329,11 @@
     display: none;
   }
 
-  .contentblockcontainer {
-    margin-top: 50px;
+  .contentblockcontainer, .projectblockcontainer {
+    margin-top: 40px;
   }
 
-  .contentblocks {
+  .contentblocks, .projectblock {
     margin: 0px auto;
     margin-top: 50px;
     float: none;
