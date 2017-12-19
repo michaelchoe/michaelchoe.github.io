@@ -106,7 +106,7 @@
 .mobilemenu {
   display: none;
   float: right;
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .dropdownmenu {
@@ -285,14 +285,14 @@
 /*project stuff*/
 
 .projectblockcontainer {
-  margin-top: 70px;
+  margin-top: 95px;
   padding-bottom: 20px;
   overflow: auto;
 }
 
 .projectblock {
   float: right;
-  margin-top: 50px;
+  margin-top: 25px;
   width: 75%;
   height: auto;
 }
