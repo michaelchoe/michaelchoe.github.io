@@ -5,12 +5,28 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NunitoBold";
+  src: url("../fonts/Nunito-SemiBold.ttf");
+}
+
 .bodytext {
-  font-family: "Lato";
+  font-family: "Nunito";
+  font-size: 15px;
 }
 
 .bodytitle {
-  font-family: "Lato";
+  font-family: "NunitoBold";
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -40,8 +56,8 @@
 }
 
 .sidebartitlehidden {
-  font-size: 50px;
-  font-family: Avenir, sans-serif;
+  font-size: 45px;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: #F3B2C4;
   letter-spacing: 0.1em;
@@ -49,13 +65,16 @@
 
 #titleline {
   height: 10px;
-  width: 445px;
+  width: 437px;
+  margin-top: 5px;
   background-color: #F3B2C4;
+  display: none;
 }
 
 #navbar {
   width: 62px;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 .link a:hover, #worklink:hover, .dropdownlink a:hover{
@@ -63,8 +82,12 @@
   color: white;
 }
 
+.dropdownlink a {
+  color: grey;
+}
+
 .link, a {
-  font-family: 'Lato', sans-serif;
+  font-family: 'NunitoBold', sans-serif;
   font-size: 14px;
   color: black;
   text-decoration: none;
@@ -74,16 +97,16 @@
 /*mobile menu*/
 
 .bars {
-  width: 30px;
-  height: 5px;
-  margin-bottom: 5px;
+  width: 23px;
+  height: 4px;
+  margin-bottom: 4px;
   background-color: #F3B2C4;
 }
 
 .mobilemenu {
   display: none;
   float: right;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .dropdownmenu {
@@ -97,6 +120,7 @@
 
 .dropdownlink {
   height: 20px;
+  color: grey;
 }
 
 
@@ -117,6 +141,7 @@
   position: fixed;
   transition: 0.4s linear;
   top: 0;
+  font-family: "NunitoBold";
 }
 
 .exit {
@@ -130,8 +155,8 @@
   float: right;
   margin-right: 20px;
   color: black;
-  font-family: arial, sans-serif;
-  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 0px;
   font-size: 50px;
   display: none;
 }
@@ -161,7 +186,7 @@
 
 .mobilelinkcontainer a {
   text-decoration: none;
-  font-family: "Lato", sans-serif;
+  font-family: "NunitoBold", sans-serif;
   color: black;
 }
 
@@ -169,10 +194,21 @@
   text-decoration: underline;
 }
 
+.dropdownmenumobile {
+  display: none;
+  padding-top: 20px;
+  height: auto;
+}
+
+.dropdownlinkmobile {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 /*portfolio blocks*/
 
 .contentblockcontainer {
-  margin-top: 100px;
+  margin-top: 70px;
   padding-bottom: 20px;
   overflow: auto;
 }
@@ -182,9 +218,25 @@
   margin-top: 50px;
   width: 75%;
   height: auto;
-  background: blue;
   position: relative;
   overflow: hidden;
+}
+
+.mobiledescription {
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: right;
+  font-family: "Nunito";
+  display: none;
+}
+
+.mobiletitle {
+  font-family: "NunitoBold";
+  margin-bottom: 5px;
+}
+
+.mobiletext {
+  margin-bottom: 5px;
 }
 
 .contentblocks img {
@@ -213,15 +265,14 @@
 .overlaytitle {
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
-  font-family: "lato";
+  font-family: "NunitoBold";
   margin-bottom: 20px;
 }
 
 .overlaytext {
   flex: 1;
   text-align: center;
-  font-family: "lato";
+  font-family: "Nunito";
   margin-bottom: 10px;
 }
 
@@ -234,14 +285,14 @@
 /*project stuff*/
 
 .projectblockcontainer {
-  margin-top: 100px;
+  margin-top: 95px;
   padding-bottom: 20px;
   overflow: auto;
 }
 
 .projectblock {
   float: right;
-  margin-top: 50px;
+  margin-top: 25px;
   width: 75%;
   height: auto;
 }
@@ -275,7 +326,7 @@
 
 @media only screen and (max-width: 700px) {
 
-  .mobilemenu, #exitX{
+  .mobilemenu, #exitX, .mobiledescription{
     display: block;
   }
 
@@ -283,11 +334,11 @@
     display: none;
   }
 
-  .contentblockcontainer {
-    margin-top: 50px;
+  .contentblockcontainer, .projectblockcontainer {
+    margin-top: 40px;
   }
 
-  .contentblocks {
+  .contentblocks, .projectblock {
     margin: 0px auto;
     margin-top: 50px;
     float: none;
@@ -299,17 +350,18 @@
   }
 
   .sidebartitlehidden {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #titleline {
     height: 5px;
-    width: 100%;
+    width: 99%;
   }
 
   .sidebartitlecontainer {
     height: 100px;
     width: auto;
   }
+
 
 }

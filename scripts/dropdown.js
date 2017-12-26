@@ -9,5 +9,14 @@ $(document).ready(function() {
     $(".dropdownmenu").hide();
   });
 
+  $("#worklinkmobile").mouseover(function() {
+      $(".dropdownmenumobile").show();
+
+  });
+
+  $("#worklinkcontainermobile").mouseleave(function() {
+    $(".dropdownmenumobile").hide();
+  });
+
 
 });
