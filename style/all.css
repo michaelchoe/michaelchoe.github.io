@@ -374,5 +374,9 @@
     width: auto;
   }
 
+  .smallerimage {
+    width: 100%;
+  }
+
 
 }
