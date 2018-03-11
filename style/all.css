@@ -364,7 +364,7 @@
     display: none;
   }
 
-  .sidebartitlehidden {
+  .sidebartitlehidden a {
     font-size: 25px;
   }
 
