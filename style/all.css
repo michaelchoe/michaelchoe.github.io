@@ -307,6 +307,14 @@
   height: auto;
 }
 
+.projectblockwhite{
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
 .projectblock img {
   max-width: 100%;
   display: block;
@@ -353,7 +361,7 @@
     margin-top: 40px;
   }
 
-  .contentblocks, .projectblock {
+  .contentblocks, .projectblock, {
     margin: 0px auto;
     margin-top: 50px;
     float: none;
