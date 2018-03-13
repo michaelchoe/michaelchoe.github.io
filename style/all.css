@@ -30,6 +30,12 @@
   font-size: 15px;
 }
 
+.indenttext {
+  font-family: "Nunito";
+  font-size: 15px;
+  padding-left: 50px;
+}
+
 .bodytitle {
   font-family: "LatoBold";
   font-weight: bold;
