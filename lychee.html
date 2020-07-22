@@ -1,231 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115447663-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-115447663-1');
-    </script>
-
-
     <meta charset="utf-8">
-    <title>Lychee</title>
-    <link rel="stylesheet" type="text/css" href="style/all.css" media="all"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Lychee App Prototype</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="scripts/projecthover.js" type="text/javascript"></script>
-    <script src="scripts/mobilemenu.js" type="text/javascript"></script>
-      <script src="scripts/dropdown.js" type="text/javascript"></script>
-    <script src="scripts/headershrink.js" type="text/javascript"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="scripts/animations.js" type="text/javascript"></script>
   </head>
   <body>
 
-    <!-- hidden mobile menu -->
-    <div class="mobilelinkpage">
+    <div class="websitecontainer">
 
-      <div class="exit">
-        <div id="exitX">
-          <p>&#xd7;</p>
-        </div>
+      <div class="header">
+        <h1 id="title">Michael Choe</h1>
       </div>
 
-      <div class="mobilelinksection">
+      <div class="menuactivator rotate">
+        <p>+</p>
+      </div>
 
-        <div class="verticalcenterlinks">
-
-          <div class="mobilelinkcontainer">
-            <div id="worklinkcontainermobile">
-              <a id="worklinkmobile" href="index.html">My Work</a>
-              <div class="dropdownmenumobile">
-
-                <div class="dropdownlinkmobile">
-                  <a href="ohg.html">OHG</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="lychee.html">Lychee</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="zuu.html">ZUU</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="thread.html">Thread</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="cusd.html">CUSD</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="haze.html">HAZE</a>
-                </div>
-
-
-
-              </div>
-            </div>
+      <div class="menu">
+        <div class="dropdownbox">
+          <a id="dropdown" href="index.html">Projects</a>
+          <div class="dropdownmenu">
+            <a href="godaddy.html">GoDaddy</a><br>
+            <a href="lychee.html">Lychee</a><br>
+            <a href="honeysuckle.html">Honeysuckle</a><br>
+            <a href="thread.html">Thread</a><br>
+            <a href="zuu.html">Zuu</a>
           </div>
-
-          <div class="mobilelinkcontainer">
-            <a href="about.html">About</a>
-          </div>
-
-          <div class="mobilelinkcontainer">
-            <a href="resume.pdf">Resume</a>
-          </div>
-
         </div>
+        <a href="about.html">About</a><br>
+        <a href="resume.pdf">Resume</a>
+      </div>
+
+      <div class="footer">
 
       </div>
 
+      <div class="projectcontainer">
+
+        <p class="projectsectiontitle">02 Lychee App Prototype</p>
+
+        <div class="divider"></div>
+
+        <div class="projectimage">
+          <img src="images/lycheeheader.png" alt="">
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Lychee is an application that helps Chinese international students better understand American slang and humor. I, along with three other designers, came up with this fully functional prototype to help Chinese International students better adjust to Cornell’s campus and interact with American peers. To achieve this solution, we first discovered a core problem based on user interviews and used this qualitative data to develop prototypes, make iterations based on feedback and eventually use prototyping tools to bring it all to life.
+
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">Empathizing with Chinese International Students</p>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          We wrote out a structured interview protocol and interviewed 4 students. We gathered basic demographic information and asked them about their social experiences at Cornell. We found that:
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          1. All have exposure to English speaking environments prior to coming to Cornell but still feel more comfortable talking to Chinese peers and using their mother tongue.<br>
+          2. Communication styles and mediums differ based on who they talk to; they primarily used FB Messenger to talk to Americans and WeChat to talk to fellow Chinese students. <br>
+          3. Cultural barriers, discrimination and clique tendencies make it more difficult for theses students to develop closer relationships with American peers. <br>
+          4. There are resources to help these students but they are not well promoted or inaccessible to some.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projectimage">
+          <img src="images/affinitydiagram.jpeg" alt="">
+        </div>
+
+        <div class="caption">
+          Organized Interview Insights with Affinity Diagram
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          The core problem is that while these students have learned English in academic settings, they are not fully comfortable using English colloquially and are not sure what to talk about with American students. After each member brainstormed 20 possible solutions, we thought the best way to address this problem would be to create an application that would help these students learn American slang, humor and pop culture references.
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">Looking Into Solution Space</p>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          To further develop this idea, we looked at similar, existing solutions. For example, an application, Slang, helps native Spanish speakers learn business/professional terminology in English. We also looked at products that aren't digital but target a relevant, core problem. For example, Cornell offers a Cornell-China program in which prospective students from China can immerse themselves into the US and the Cornell campus for a summer. While building off of these, to better tailor our solution we:
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          1. Ideated ways in which students can apply what they learned on the app<br>
+          2. Decided to make the application mobile as our target audience often uses digital platforms for communication and learning.
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">Initial Design</p>
+
+        <div class="divider"></div>
+
+        <iframe class="widget" src="https://player.vimeo.com/video/440239545" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        <div class="caption">
+          Video of Initial Paper Prototype
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          To best prepare our users for casual conversations with American students, we came up with the following three key features:
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          1. Lessons: the main focus of the application, users should be able to learn through lessons and evaluate their progress through quizzes. <br>
+          2. Dictionary: users should be able to refer to a convenient source for words and phrases without having to go through entire lessons.<br>
+          3. AI Chatting: users should be able to chat with an American student AI to apply what they learn without the stress of messing up in real life interactions.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          As shown in the video above, for our first round of user testing, we focused on creating tasks for the login/registration process, going through a lesson, looking up a word in the dictionary, chatting with an AI and adjusting user settings.
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">User Testing Insights</p>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Using these tasks, we conducted user testing with four more Chinese international students. The following summarizes our insights across all tests:
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Things that Worked:<br>
+          1. Lesson structure and flow is intuitive and effective.<br>
+          2. Searching words in dictionary is super easy; moreover, favorite words feature makes memorizing more commonly used words easier.<br>
+          3. Onboarding experience was very easy<br>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Things to Improve On:<br>
+          1. Locking lessons prevents users from skipping material that they already know.<br>
+          2. There was no way to log out of the application (assumed it would be in settings).<br>
+          3. Registration could be simplified by connecting to existing account.<br>
+          4. System language can only be changed in app, not during onboarding.<br>
+          5. Icons in navigation bar aren’t super clear (folder and magnifying glass especially).
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">Making Improvements Part 1: Onboarding</p>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Since a significant majority of our target audience uses WeChat, we decided it would be helpful to allow users to either login with a username or WeChat account. When clicking WeChat, users will be given to option to continue with login or register with WeChat if they do not have a preexisting accounted linked. Furthermore, we added “go back” buttons in both login sequences to improve error recovery.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projectimage">
+          <img src="images/onboardingflow2.png" alt="">
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">Making Improvements Part 2: Chatting</p>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Since a significant majority of our target audience uses WeChat, we decided it would be helpful to allow users to either login with a username or WeChat account. When clicking WeChat, users will be given to option to continue with login or register with WeChat if they do not have a preexisting accounted linked. Furthermore, we added “go back” buttons in both login sequences to improve error recovery.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projectimage">
+          <img src="images/messagingflow.png" alt="">
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="projectsectiontitle">Making Improvements Part 3: English/Chinese Translation</p>
+
+        <div class="divider"></div>
+
+        <div class="projecttext">
+          Since a significant majority of our target audience uses WeChat, we decided it would be helpful to allow users to either login with a username or WeChat account. When clicking WeChat, users will be given to option to continue with login or register with WeChat if they do not have a preexisting accounted linked. Furthermore, we added “go back” buttons in both login sequences to improve error recovery.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="projectimage">
+          <img src="images/messagingflow.png" alt="">
+        </div>
+
+
+      </div>
 
     </div>
-
-      <div class="websitecontainer">
-
-        <div class="sidebarcontainer">
-
-            <div class="sidebartitlecontainer">
-
-              <div class="sidebartitlehidden">
-                <a href="index.html">MICHAEL CHOE</a>
-                <div id="titleline"></div>
-              </div>
-
-
-            </div>
-
-            <div class="mobilemenu">
-
-              <div class="bars"></div>
-              <div class="bars"></div>
-              <div class="bars"></div>
-
-            </div>
-
-            <table id="navbar">
-
-              <tr>
-                <td id="worklinkcontainer">
-                  <a id="worklink" href="index.html">My Work</a>
-                  <div class="dropdownmenu">
-
-                    <div class="dropdownlink">
-                      <a href="ohg.html">OHG</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="lychee.html">Lychee</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="zuu.html">ZUU</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="thread.html">Thread</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="cusd.html">CUSD</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="haze.html">HAZE</a>
-                    </div>
-
-          
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="link">
-                  <a href="about.html">About</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="link">
-                  <a href="resume.pdf">Resume</a>
-                </td>
-              </tr>
-
-            </table>
-
-
-        </div>
-
-      <div class="projectblockcontainer">
-
-
-        <div class="projectblock">
-          <p class="bodytext">This fall semester, I am working in a team of four to create the UX/UI for a prototype application that would help Chinese International students at Cornell University better acclimate to American culture.</p>
-
-          <p class="bodytitle">Collecting Qualitative Data</p>
-        </div>
-
-        <div class="projectblock">
-          <p class="bodytext">We started the project by creating a structured interview protocol that would gather basic demographic information and concerns of the interviewee and allow us to empathize with the interviewees’ social experiences on campus. We then extracted qualitative data from four interviews and later organized all that information into an affinity diagram (shown below).<br><br></p>
-        </div>
-
-        <div class="projectblock">
-          <img src="images/affinitydiagram.png" alt="affinitydiagram"><br><br>
-          <p class="bodytext">From this exercise, we noted key data points shared amongst all interviewees:
-          <br><br></p>
-          <p class="indenttext">
-            1. The people we interviewed learned English prior to coming to Cornell; however, they all feel more comfortable speaking in their Mother Tongue. <br><br>
-
-            2. These students have a strong focus on their academics and future careers. However, they feel that they don’t have the same opportunities an American student would have.  <br><br>
-
-            3. All of them have had experiences with joining clubs on campus that promote the Asian or International Asian identity. <br><br>
-
-            4. Communication between friends differs depending on who they are talking to; specifically, they speak in Chinese through WeChat when talking to Chinese friends and they speak in English through Facebook Messenger when talking to American friends.<br><br>
-
-            5. They recognize that there exist stark differences between Chinese and American culture that sometimes makes them feel separated/different from their American peers.</p><br>
-          <p class="bodytext">
-Based upon these points, we created a persona, Yu Xuan Li, that would effectively represent our target demographic:
-
-          <p class="bodytitle">Creating User-Centered Insights</p>
-          <p class="bodytext">Having developed a strong understanding of Yu Xuan and our four interviewees’ experiences, we started to truly empathize with their concerns. The core problem that constituents in our target demographic share is that they have difficulty establishing a strong, diverse social/professional network at Cornell University. To find the root cause of this problem, we went ahead and asked a series of “why”’s:<br><br>
-Core Problem: International Chinese students have a hard time building a well-connected social/professional network at Cornell University.  <br><br></p>
-          <p class="indenttext">
-            1. Why? Because they feel distant from other groups on campus <br><br>
-
-            2. Why? Because they don’t feel as comfortable using English when public speaking, sharing ideas in meetings or interviewing with a company/on-campus club. <br><br>
-
-            3. Because Chinese is their first language and they use Chinese more often in their daily lives. <br><br>
-
-            4. Why? Because they haven’t had a lot of opportunities to practice their English in more casual settings (outside of the classroom). <br><br>
-
-            5. <strong>Why? Because they learned English in a formal setting and thus don’t have a strong grasp on casual, conversational English and common American conversation topics that many young, American students know.
-</strong></p><br>
-
-            <p class="bodytext">By asking “why” consecutively, we were able to uncover a root problem and brainstorm products that would help to solve this problem. After coming up with 20 ideas each, the group decided to create an application that would help Chinese International students learn American slang/pop culture so they can know how to engage in conversation with their American peers better.</p>
-
-            <p class="bodytitle">Designing the Application Prototype</p>
-
-            <p class="bodytext">Taking all the aforementioned insights, my group and I created the first iteration of our prototype: a low fidelity, pdf prototype made with Balsamiq. Our first prototype provides structured lessons on American slang, conversation topics and pop culture references. In addition, the app offers a dictionary search feature for on-the-go use, opportunities to practice learned material with an AI chatting system and flexibility to change account settings after onboarding.</p><br><br>
-
-            <img class="smallerimage" src="images/lycheesample.jpeg" alt="lychee"><br>
-
-            <a href="lychee_mockup.pdf">Click Here To View the Balsamiq Prototype</a><br><br>
-
-            <p class="bodytext">For our next step, we will conduct user testing with this low fidelity prototype and conduct heuristic evaluations (Nielsen's Heuristics). Once we gather information from both procedures, we will reiterate our design and create a higher-fidelity prototype using Sketch and InVision. In addition, we will refine the application's brand identity and create a UI kit. Stay tuned for the rest of the project! </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
 
   </body>
 </html>

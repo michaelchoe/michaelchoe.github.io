@@ -1,287 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115447663-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-115447663-1');
-    </script>
-
     <meta charset="utf-8">
-    <title>Hi, I'm Michael</title>
-
-    <link rel="stylesheet" type="text/css" href="style/all.css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Hi I'm Michael</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="scripts/projecthover.js" type="text/javascript"></script>
-    <script src="scripts/mobilemenu.js" type="text/javascript"></script>
-    <script src="scripts/dropdown.js" type="text/javascript"></script>
-    <script src="scripts/headershrink.js" type="text/javascript"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="scripts/animations.js" type="text/javascript"></script>
   </head>
   <body>
 
-    <!-- hidden mobile menu -->
-    <div class="mobilelinkpage">
+    <div class="websitecontainer">
 
-      <div class="exit">
-        <div id="exitX">
-          <p>&#xd7;</p>
-        </div>
+      <div class="header">
+        <h1 id="title">Michael Choe</h1>
       </div>
 
-      <div class="mobilelinksection">
+      <div class="menuactivator rotate">
+        <p>+</p>
+      </div>
 
-        <div class="verticalcenterlinks">
-
-          <div class="mobilelinkcontainer">
-            <div id="worklinkcontainermobile">
-              <a id="worklinkmobile" href="index.html">My Work</a>
-              <div class="dropdownmenumobile">
-
-                <div class="dropdownlinkmobile">
-                  <a href="ohg.html">OHG</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="lychee.html">Lychee</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="zuu.html">ZUU</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="thread.html">Thread</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="cusd.html">CUSD</a>
-                </div>
-
-                <div class="dropdownlinkmobile">
-                  <a href="haze.html">HAZE</a>
-                </div>
+      <div class="menu">
+        <div class="dropdownbox">
+          <a id="dropdown" href="index.html">Projects</a>
+          <div class="dropdownmenu">
+            <a href="godaddy.html">GoDaddy</a><br>
+            <a href="lychee.html">Lychee</a><br>
+            <a href="honeysuckle.html">Honeysuckle</a><br>
+            <a href="thread.html">Thread</a><br>
+            <a href="zuu.html">Zuu</a>
+          </div>
+        </div>
+        <a href="about.html">About</a><br>
+        <a href="resume.pdf">Resume</a>
+      </div>
 
 
 
-              </div>
+      <div class="footer">
+
+      </div>
+
+      <div class="projectblockcontainer">
+
+        <div class="projectblock" id="project1">
+          <img src="images/godaddyframe.png" alt="lychee mockup">
+          <img id="godaddygif" src="images/godaddy.gif" alt="lychee mockup">
+
+          <a href="godaddy.html">
+            <div class="projecthover" id="project1hover">
+              <p class="projectnumber">01</p>
+              <p class="projectdescription">GoDaddy Internship<br><br>
+              Conducted online user testing and coded fully interactive prototype to improve UX of website builder and designed an array of website templates that reached millions of users</p>
             </div>
-          </div>
-
-          <div class="mobilelinkcontainer">
-            <a href="about.html">About</a>
-          </div>
-
-          <div class="mobilelinkcontainer">
-            <a href="resume.pdf">Resume</a>
-          </div>
+          </a>
 
         </div>
 
-      </div>
+        <div class="projectblock" id="project2">
+          <img src="images/lycheeweb.png" alt="lychee mockup">
+          <a href="lychee.html">
+            <div class="projecthover" id="project2hover">
+              <p class="projectnumber">02</p>
+              <p class="projectdescription">Lychee App Prototype<br><br>
+                Application prototype that would help Chinese International students at Cornell University better acclimate to American culture and feel more comfortable talking with American peers</p>
+            </div>
+          </a>
 
+        </div>
+
+        <div class="projectblock" id="project3">
+          <img src="images/honeysuckleweb.png" alt="honeysuckle mockup">
+          <div class="projecthover" id="project3hover">
+            <p class="projectnumber">03</p>
+            <p class="projectdescription">Honeysuckle App Prototype<br><br>
+            Presentation and UI Design for an application prototype that would help sickle cell patients </p>
+          </div>
+        </div>
+
+        <div class="projectblock" id="project4">
+          <img src="images/threadmockup.png" alt="lychee mockup">
+          <a href="thread.html">
+            <div class="projecthover" id="project4hover">
+
+                <p class="projectnumber">04</p>
+                <p class="projectdescription">Thread Magazine<br><br>
+                Former Art Director of Cornell's leading fashion magazine. Led layout, graphic and photography</p>
+
+            </div>
+          </a>
+
+        </div>
+
+        <div class="projectblock" id="project5">
+          <img src="images/zuumockup.png" alt="lychee mockup">
+          <a href="zuu.html">
+            <div class="projecthover" id="project5hover">
+              <p class="projectnumber">05</p>
+              <p class="projectdescription">ZUU Online Branding<br><br>
+              I spearheaded rebranding and coded an electronic newsletter template for a fintech startup in Singapore </p>
+            </div>
+          </a>
+
+        </div>
+
+
+      </div>
 
     </div>
-
-      <div class="websitecontainer">
-
-        <div class="sidebarcontainer">
-
-            <div class="sidebartitlecontainer">
-
-              <div class="sidebartitlehidden">
-                <a href="index.html">MICHAEL CHOE</a>
-                <div id="titleline"></div>
-              </div>
-
-
-            </div>
-
-            <div class="mobilemenu">
-
-              <div class="bars"></div>
-              <div class="bars"></div>
-              <div class="bars"></div>
-
-            </div>
-
-            <table id="navbar">
-
-              <tr>
-                <td id="worklinkcontainer">
-                  <a id="worklink" href="index.html">My Work</a>
-                  <div class="dropdownmenu">
-
-                    <div class="dropdownlink">
-                      <a href="ohg.html">OHG</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="lychee.html">Lychee</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="zuu.html">ZUU</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="thread.html">Thread</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="cusd.html">CUSD</a>
-                    </div>
-
-                    <div class="dropdownlink">
-                      <a href="haze.html">HAZE</a>
-                    </div>
-
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="link">
-                  <a href="about.html">About</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="link">
-                  <a href="resume.pdf">Resume</a>
-                </td>
-              </tr>
-
-            </table>
-
-
-        </div>
-
-
-
-        <div class="contentblockcontainer">
-
-          <div class="contentblocks">
-            <img src="images/ohgblock.png" alt="ohg">
-            <div class="overlay">
-              <div class="centeringcontainer">
-                <p class="overlaytitle">Honeysuckle / Omnicom Health Group<br>Design and Marketing Intern</p>
-                <p class="overlaytext">I led the design and strategy for a prototype app that would help
-                  sickle sell patients.
-                  <br><br><a class="projectlink" href="ohg.html">See Work</a></p>
-              </div>
-            </div>
-            <div class="mobiledescription">
-              <p class="mobiletitle">Honeysuckle / Omnicom Health Group<br>Design and Marketing Intern</p>
-              <p class="mobiletext">I led the design and strategy for a prototype app that would help
-                sickle sell patients.
-              </p>
-              <a class="projectlink" href="ohg.html">See Work</a>
-            </div>
-          </div>
-
-          <div class="contentblocks">
-            <img src="images/lychee.png" alt="lychee">
-            <div class="overlay">
-              <div class="centeringcontainer">
-                <p class="overlaytitle">Lychee (Ongoing Project)<br>UI/UX Designer</p>
-                <p class="overlaytext">Working with three other designers to create an application prototype that would help Chinese International students at Cornell University better acclimate to American culture and feel more comfortable talking with American peers.
-                  <br><br><a class="projectlink" href="lychee.html">See Work</a></p>
-              </div>
-            </div>
-            <div class="mobiledescription">
-              <p class="mobiletitle">Lychee (Ongoing Project)<br>UI/UX Designer</p>
-              <p class="mobiletext">Working with three other designers to create an application prototype that would help Chinese International students at Cornell University better acclimate to American culture and feel more comfortable talking with American peers.
-              </p>
-              <a class="projectlink" href="lychee.html">See Work</a>
-            </div>
-          </div>
-
-          <div class="contentblocks">
-            <img src="images/threadblock.gif" alt="thread magazine">
-            <div class="overlay">
-              <div class="centeringcontainer">
-                <p class="overlaytitle">Thread Magazine<br>Art Director</p>
-                <p class="overlaytext">I lead the layout design and create marketing materials for Cornell's only fashion/art/lifestyle magazine
-                <br><br><a class="projectlink" href="thread.html">See Work</a></p>
-              </div>
-            </div>
-            <div class="mobiledescription">
-              <p class="mobiletitle">Thread Magazine<br>Art Director</p>
-              <p class="mobiletext">I lead the layout design and create marketing materials for Cornell's only fashion/art/lifestyle magazine
-              </p>
-              <a class="projectlink" href="thread.html">See Work</a>
-            </div>
-          </div>
-
-          <div class="contentblocks">
-            <img src="images/zuublock.png" alt="zuu">
-            <div class="overlay">
-              <div class="centeringcontainer">
-                <p class="overlaytitle">ZUU Online Singapore<br>Design and Marketing Intern</p>
-                <p class="overlaytext">I designed a media kit, marketing materials and coded an electronic newsletter template for
-                  a fintech startup in Singapore.
-                  <br><br><a class="projectlink" href="zuu.html">See Work</a></p>
-              </div>
-            </div>
-            <div class="mobiledescription">
-              <p class="mobiletitle">ZUU Online Singapore<br>Design and Marketing Intern</p>
-              <p class="mobiletext">I designed a media kit, marketing materials and coded an electronic newsletter template for
-                a fintech startup in Singapore.
-              </p>
-              <a class="projectlink" href="zuu.html">See Work</a>
-            </div>
-          </div>
-
-
-
-          <div class="contentblocks">
-            <img src="images/cusdblock.png" alt="CUSD">
-            <div class="overlay">
-              <div class="centeringcontainer">
-                <p class="overlaytitle">Cornell University Sustainable Design<br>Marketer/Designer</p>
-                <p class="overlaytext">CUSD is a student run project team that aims to create a network of sustainable communities on campus and off.
-                <br><br><a class="projectlink" href="cusd.html">See Work</a></p>
-              </div>
-            </div>
-            <div class="mobiledescription">
-              <p class="mobiletitle">Cornell University Sustainable Design<br>Marketer/Designer</p>
-              <p class="mobiletext">CUSD is a student run project team that aims to create a network of sustainable communities on campus and off.
-              </p>
-              <a class="projectlink" href="cusd.html">See Work</a>
-            </div>
-          </div>
-
-          <div class="contentblocks">
-            <img src="images/hazeblock.png" alt="haze">
-            <div class="overlay">
-              <div class="centeringcontainer">
-                <p class="overlaytitle">HAZE</p>
-                <p class="overlaytext">A personal zine about my experiences growing
-                  up and the troubles I overcame during adolescence.
-                <br><br><a class="projectlink" href="haze.html">See Work</a></p>
-
-              </div>
-            </div>
-            <div class="mobiledescription">
-              <p class="mobiletitle">HAZE</p>
-              <p class="mobiletext">A personal zine about my experiences growing
-                up and the troubles I overcame during adolescence.
-              </p>
-              <a class="projectlink" href="haze.html">See Work</a>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-
 
   </body>
 </html>
