@@ -1,9 +1,23 @@
+@font-face {
+  font-family: "Renner";
+  src: url("fonts/renner-book.otf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Renner Light";
+  src: url("fonts/renner-light.otf") format("TrueType");
+}
+
 * {
   margin:0;
   padding: 0;
-  letter-spacing: .15em;
-  font-family: sans-serif;
+  letter-spacing: .1em;
+  font-family: "Renner Light", sans-serif;
   line-height: 1.5em;
+}
+
+body {
+  background-color: #f5f5f5;
 }
 
 a {
@@ -26,9 +40,10 @@ a:hover, .dropdownmenu a:hover {
 
 #title {
   font-size: 18px;
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: "Renner", sans-serif;
+  font-weight: normal;
   display: inline-block;
+  letter-spacing: .2em;
 }
 
 .menuactivator {
@@ -85,8 +100,8 @@ a:hover, .dropdownmenu a:hover {
 
 #projectcounter {
   font-size: 40px;
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: "Renner", sans-serif;
+  font-weight: normal;
   margin-left: 80px;
   display: inline-block;
 }
@@ -107,6 +122,8 @@ a:hover, .dropdownmenu a:hover {
   width: 100%;
   height: auto;
   position: relative;
+  border-radius: 2%;
+  background-color: #EEEEEE;
 }
 
 .projectblock img {
@@ -115,15 +132,17 @@ a:hover, .dropdownmenu a:hover {
   width: 100%;
   height: auto;
   z-index: 2;
+  border-radius: 2%;
 }
 
 #godaddygif {
   position: absolute;
-  top: 28%;
+  top: 28.5%;
   left: 11.25%;
   z-index: 1;
   width: 77.5%;
   height: 44%;
+  border-radius: 0%;
 }
 
 .aboutblock {
@@ -145,17 +164,20 @@ a:hover, .dropdownmenu a:hover {
 }
 
 .aboutimageblock img {
-  max-height: 100%;
+  height: calc(100vh - 80px);
   width: auto;
+  border-radius: 2%;
 }
 
 .abouttitle {
   font-size: 18px;
   margin-bottom: 40px;
+  font-family: "Renner", sans-serif;
 }
 
 .abouttext {
   max-width: 80%;
+  font-size: 15px;
 }
 
 .projecthover {
@@ -167,6 +189,9 @@ a:hover, .dropdownmenu a:hover {
   background-color: white;
   display: none;
   z-index: 2;
+  border-radius: 2%;
+  box-shadow:  5px 5px 10px #e0e0e0,
+             -5px -5px 10px #fafafa;
 }
 
 .projectnumber {
@@ -175,6 +200,8 @@ a:hover, .dropdownmenu a:hover {
   transform: translateY(-50%);
   margin-left: 40px;
   font-size: 15px;
+  font-family: "Renner", sans-serif;
+  font-weight: normal;
 }
 
 .projectdescription {
@@ -182,7 +209,9 @@ a:hover, .dropdownmenu a:hover {
   bottom: 40px;
   margin-left: 40px;
   margin-right: 40px;
+  font-family: "Renner", sans-serif;
   font-size: 15px;
+  font-weight: normal;
 }
 
 #project1hover {
@@ -217,24 +246,34 @@ a:hover, .dropdownmenu a:hover {
 
 .projectsectiontitle {
   font-size: 18px;
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: "Renner", sans-serif;
+  font-weight: normal;
 }
 
 .projectimage img {
   height: auto;
   width: 100%;
+  border-radius: 2%;
 }
 
-.projecttext, .projecttextlist {
-  margin: 0px auto;
+.projectimagesmall img {
+  height: auto;
   width: 65%;
-  font-family: sans-serif;
+  display: block;
+  margin: 0px auto;
+}
+
+.projecttextcontainer {
+  width: 65%;
+  margin: 0px auto;
+}
+.projecttext, .projecttextlist {
   font-size: 15px;
 }
 
 .projecttextlist {
-  width: calc(65% - 3.70em);
+  width: calc(100% - 3.75em);
+  margin: 0px auto;
   list-style-position: outside;
 }
 
@@ -250,9 +289,9 @@ a:hover, .dropdownmenu a:hover {
 }
 
 .widget {
-  width: 100%;
-  height: 40vw;
+  width: 800px;
+  height: 450px;
   box-sizing: border-box;
-  border: 1px solid grey;
-  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 2%;
 }
