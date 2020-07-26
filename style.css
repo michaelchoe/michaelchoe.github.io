@@ -289,9 +289,79 @@ a:hover, .dropdownmenu a:hover {
 }
 
 .widget {
-  width: 800px;
-  height: 450px;
+  width: 100%;
+  height: calc((100vw - 445px) * (9/16));
+  background-color: #eeeeee;
   box-sizing: border-box;
   border: 1px solid transparent;
   border-radius: 2%;
+}
+
+@media only screen and (max-width: 1275px) {
+
+  .projectnumber {
+    top: 0;
+    transform: translateY(0%);
+    margin-top: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+  .projectnumber {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }
+
+  .projectblockcontainer {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .projectnumber {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }
+
+  .projectblockcontainer {
+    height: calc(100vh - 80px);
+    width: 90%;
+    float: none;
+    margin-bottom: calc(100vw * .05);
+    margin: 0px auto;
+    margin-top: calc((100vw * .20) + 27px);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: calc(100vw * .05);
+  }
+
+  .menuactivator {
+    position: fixed;
+    top: calc(100vw * .025);
+    right: calc(100vw * .05);
+    transform: translateY(0%);
+    margin-left: 0px;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .header {
+    top: calc(100vw * .05);
+    left: calc(100vw * .05);
+  }
+
+  .mobileheader {
+    position: fixed;
+    background-color: #f5f5f5;
+    height: calc((100vw * .1) + 27px);
+    width: 100%;
+    z-index: 5;
+    top: 0%;
+  }
+
 }
