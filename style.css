@@ -327,7 +327,6 @@ a:hover, .dropdownmenu a:hover {
     right: calc(100vw * .05);
     transform: translateY(0%);
     margin-left: 0px;
-    white-space: nowrap;
   }
 
   .menuactivator p {
@@ -386,26 +385,31 @@ a:hover, .dropdownmenu a:hover {
     top: calc((100vw * .1) + 18px);
   }
 
-
-  .dropdownmenu {
-    display: none;
-    color: gray;
-  }
-
-  .dropdownmenu a {
-    color: #9e9e9e;
-  }
-
-  .dropdownbox {
-    width: auto;
-    height: auto;
-  }
-
   .footertext {
     position: static;
     bottom: 0;
     left: 0;
     margin-bottom: calc(100vw*.05);
+  }
+
+  .projectnumber {
+    margin-left: calc(100vw*.05);
+  }
+
+  .projectdescription {
+    bottom: calc(100vw*.05);
+    margin-left: calc(100vw*.05);
+    margin-right: calc(100vw*.05);
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .projectnumber {
+    top: 0;
+    transform: translateY(0%);
+    margin-top: calc(100vw*.05);
   }
 
 }
