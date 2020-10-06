@@ -230,10 +230,16 @@ a:hover, .dropdownmenu a:hover {
   font-weight: normal;
 }
 
+.projectimage {
+  position: relative;
+}
+
 .projectimage img {
+  position: relative;
   height: auto;
   width: 100%;
   border-radius: 2%;
+  z-index: 2;
 }
 
 .projectimagesmall img {
@@ -275,6 +281,21 @@ a:hover, .dropdownmenu a:hover {
   box-sizing: border-box;
   border: 1px solid transparent;
   border-radius: 2%;
+}
+
+.intextlink {
+  text-decoration: underline;
+  color: black;
+}
+
+#lycheeprototype {
+  position: absolute;
+  top: 19.25%;
+  left: 39.75%;
+  z-index: 1;
+  width: 20.5%;
+  height: auto;
+  border-radius: 0%;
 }
 
 @media only screen and (max-width: 1275px) {
@@ -400,6 +421,35 @@ a:hover, .dropdownmenu a:hover {
     bottom: calc(100vw*.05);
     margin-left: calc(100vw*.05);
     margin-right: calc(100vw*.05);
+  }
+
+  .abouttext {
+    max-width: 100%;
+  }
+
+  .aboutimageblock {
+    margin: 0px auto;
+    margin-top: calc((100vw * .20) + 27px);
+    margin-bottom: calc(100vw*.05);
+    height: auto;
+    width: 90%;
+    float: none;
+  }
+
+  .aboutimageblock img {
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+  }
+
+  .aboutblock {
+    height: auto;
+    width: 90%;
+    float: none;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin: 0px auto;
   }
 
 }
