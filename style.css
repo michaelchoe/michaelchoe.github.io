@@ -298,6 +298,16 @@ a:hover, .dropdownmenu a:hover {
   border-radius: 0%;
 }
 
+#honeysuckleprototype {
+  position: absolute;
+  top: 22%;
+  left: 39%;
+  z-index: 1;
+  width: 20.5%;
+  height: auto;
+  border-radius: 0%;
+}
+
 @media only screen and (max-width: 1275px) {
 
   .projectnumber {
