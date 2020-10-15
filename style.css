@@ -172,7 +172,6 @@ a:hover, .dropdownmenu a:hover {
 
 .abouttitle {
   font-size: 18px;
-  margin-bottom: 40px;
   font-family: "Renner", sans-serif;
 }
 
@@ -264,7 +263,7 @@ a:hover, .dropdownmenu a:hover {
 }
 
 .caption {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 12px;
   text-align: center;
 }
@@ -308,13 +307,47 @@ a:hover, .dropdownmenu a:hover {
   border-radius: 0%;
 }
 
-@media only screen and (max-width: 1275px) {
+@media only screen and (max-width: 1350px) {
 
   .projectnumber {
     top: 0;
     transform: translateY(0%);
     margin-top: 40px;
   }
+
+  .aboutcontainer {
+    height: calc(100vh - 80px);
+    width: calc(100vw - 700px);
+    float: right;
+    margin-right: 40px;
+  }
+
+  .aboutblock {
+    height: auto;
+    width: 100%;
+    float: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+
+  .aboutimageblock {
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .aboutimageblock img {
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+  }
+
+  .abouttext {
+    max-width: 100%;
+  }
+
 
 }
 
@@ -331,6 +364,10 @@ a:hover, .dropdownmenu a:hover {
   }
 
   .projecttextcontainer {
+    width: 100%;
+  }
+
+  .projectimagesmall img {
     width: 100%;
   }
 }
@@ -420,7 +457,7 @@ a:hover, .dropdownmenu a:hover {
     position: static;
     bottom: 0;
     left: 0;
-    margin-bottom: calc(100vw*.05);
+    padding-bottom: calc(100vw*.05);
   }
 
   .projectnumber {
@@ -433,33 +470,28 @@ a:hover, .dropdownmenu a:hover {
     margin-right: calc(100vw*.05);
   }
 
-  .abouttext {
-    max-width: 100%;
-  }
-
-  .aboutimageblock {
-    margin: 0px auto;
-    margin-top: calc((100vw * .20) + 27px);
-    margin-bottom: calc(100vw*.05);
+  .aboutcontainer {
     height: auto;
     width: 90%;
     float: none;
+    margin: 0px auto;
+    margin-top: calc((100vw * .20) + 27px);
+  }
+
+  .aboutimageblock {
+    margin-top: 0;
+    margin-bottom: calc(100vw*.05);
   }
 
   .aboutimageblock img {
     height: auto;
     width: 100%;
-    border-radius: 2%;
   }
 
   .aboutblock {
-    height: auto;
-    width: 90%;
-    float: none;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-right: 0px;
-    margin: 0px auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 
 }
