@@ -146,6 +146,16 @@ a:hover, .dropdownmenu a:hover {
   border-radius: 0%;
 }
 
+#godaddygif2 {
+  position: absolute;
+  top: 25.9%;
+  left: 24%;
+  z-index: 1;
+  width: 52.05%;
+  height: 51.39%;
+  border-radius: 0%;
+}
+
 .aboutblock {
   height: calc(100vh - 80px);
   width: 400px;
